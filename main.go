@@ -11,6 +11,9 @@ func main() {
 	mux := http.NewServeMux()
 	// routing with mux
 	mux.HandleFunc("/", handler.MainHandler)
+	// directory manipulation
+	fileServer := http.FileServer(http.Dir("assets"))
+	mux.Handle("/static/", http.StripPrefix("/static", fileServer))
 
 	// port
 	port := ":8080"

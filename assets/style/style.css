@@ -40,3 +40,18 @@ button {
   padding: 8px 16px;
   cursor: pointer;
 }
+b {
+  text-transform: uppercase !important;
+  color: red;
+}
+.fck-container {
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+}
+.img-fck {
+  width: 50%;
+}

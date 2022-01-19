@@ -16,3 +16,27 @@ body {
   position: absolute;
   bottom: 0;
 }
+.content {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label {
+  font-size: 42px;
+}
+input {
+  margin-top: 16px;
+  font-size: 32px;
+  padding: 8px 16px;
+}
+button {
+  font-size: 32px;
+  width: 100%;
+  background-color: blue;
+  border: blue;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+}

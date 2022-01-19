@@ -1,1 +1,12 @@
-{{template "layouts" .}}{{define "content"}}form{{end}}
+{{template "layouts" .}}{{define "content"}} {{/*
+<div class="content">
+  */}}
+  <form method="POST" action="/say">
+    <label for="name">What's Your Name?</label>
+    <div>
+      <input type="text" id="name" placeholder="input your name here" />
+    </div>
+    <button type="submit">Send</button>
+  </form>
+</div>
+{{end}}
